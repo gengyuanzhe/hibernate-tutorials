@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.huawei.vsp.po">
+
+    <class name="SitcomRelation" table="SITCOM_BINDING">
+        <composite-id>
+            <key-property name="sitcomId" type="long" column="SITCOMID" />
+            <key-property name="itemId" type="long" column="ITEMID" />
+        </composite-id>
+        <property name="serialNo" type="integer" column="SERIALNO" />
+        <property name="updateTime" type="string" column="UPDATETIME" />
+        <property name="changeFlag" type="integer" column="CHANGEFLAG" />
+    </class>
+</hibernate-mapping>
